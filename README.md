@@ -16,31 +16,28 @@ System automates **onboarding, attendance approvals, mandatory training** and in
 💼 All workflows work with **real company business identity**:
 📧 denisa_pitnerova@IssueCoinAIsro.onmicrosoft.com
 
-**🔁 Automated Workflows**
+## 🔁 Automated Workflows
 **✅ 1 — Attendance & Time Off Automation**
-
-## Smart approval workflow
-## Status tracking in SharePoint (Pending → Approved/Rejected)
-## Automated personalized email to employee
+**Smart approval workflow**
+**Status tracking in SharePoint (Pending → Approved/Rejected)**
+**Automated personalized email to employee**
 ➡ “Your leave request has been approved.”
 ➡ “Your leave request has been rejected.”
 
 **🧩 2 — Onboarding Automation**
-
-## Welcome email with pre-start SharePoint checklist
-## Notification to HR & IT to prepare:
+**Welcome email with pre-start SharePoint checklist**
+**Notification to HR & IT to prepare**:
 User Access & Contract
 Laptop & Workstation
 H&S / GDPR / Fire Safety onboarding
 
 **🎓 3 — Compliance Mandatory Training**
-
-## Auto-assignment of 3 trainings:
+**Auto-assignment of 3 trainings**:
 Health & Safety
 Fire Protection
 GDPR
-## Tracking completion status in SharePoint
-## Auto-reminder after 7 days
+**Tracking completion status in SharePoint**
+**Auto-reminder after 7 days**
 
 **🛠️ Tech Stack** 
 
