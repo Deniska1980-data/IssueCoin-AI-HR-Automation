@@ -51,7 +51,6 @@ GDPR
 | Deployment & Hosting | Microsoft 365 Business Basic               |
 
 **🔐 Security** 
-
 Entra ID secured access
 No sensitive personal data exposed in GitHub
 Minimal required privileges (least-privilege principle)
@@ -65,12 +64,10 @@ Minimal required privileges (least-privilege principle)
 | Phase 3 | Integration with n8n + RAG knowledge of labor law |
 | Phase 4 | Self-service HR assistant chat for employees      |
 
----
+
 
 ## 🧠 Multi-Agent Governance Architecture
-
 IssueCoin AI HR Automation uses a **secure multi-agent system** integrated within Microsoft Cloud.
-
 All agents are coordinated by a single intelligence layer — **IssueCoin AI Boss Agent** running on **Azure OpenAI**.
 
                      ( Azure OpenAI )
@@ -90,7 +87,7 @@ Onboarding Leave Workflow BOZP/GDPR AWS Lambda + Titan
 (Forms + (Approvals + (Automation & Compliance Monitor
 SharePoint) SharePoint) Reminders) (Read-only)                   
 
----
+
 
 ## 🔐 Security & Compliance Principles
 
@@ -106,7 +103,7 @@ SharePoint) SharePoint) Reminders) (Read-only)
 
 > 📌 No personal identifiers (PII) or sensitive personal data are stored in this demo environment.
 
----
+
 ## 🤖 AI Agents Overview
 
 | Agent | Platform | Status | Responsibility |
@@ -117,7 +114,7 @@ SharePoint) SharePoint) Reminders) (Read-only)
 | Training Agent | Azure OpenAI | Coming Soon | Mandatory training automation |
 | Legislative Agent | AWS Lambda + Titan | Coming Soon | EU law monitoring (GDPR/BOZP) |
 
----
+
 ## 🚀 DevOps & Operations Model
 
 | Layer | Technology |
@@ -129,9 +126,7 @@ SharePoint) SharePoint) Reminders) (Read-only)
 | Monitoring | M365 Cloud Logs + Flow Runs |
 | Future CI/CD | GitHub Actions for automation export |
 
----
 ### 🔜 Roadmap (next releases)
-
 - Mandatory training workflows (BOZP/PO/GDPR)
 - Titan-powered legislative alerts
 - Microsoft Teams approvals
