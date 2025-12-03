@@ -140,12 +140,6 @@ SharePoint) SharePoint) Reminders) (Read-only)
 - Microsoft Teams approvals
 - Multi-language support (SK / CZ / EN)
 
-⚠️ Disclaimer:
-This automation system is built using demo test data only. 
-No real personal, payroll or confidential business data are included.
-
-
----
 
 **📸 Screenshots**
 
@@ -170,6 +164,10 @@ No real personal, payroll or confidential business data are included.
 Denisa Pitnerová
 AI Automation & DevOps Engineer
 IssueCoin AI s.r.o.
+
+⚠️ Disclaimer:
+This automation system is built using demo test data only. 
+No real personal, payroll or confidential business data are included.
 
 **⭐️ Support the project**
 
