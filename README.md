@@ -144,6 +144,7 @@ SharePoint) SharePoint) Reminders) (Read-only)
 This automation system is built using demo test data only. 
 No real personal, payroll or confidential business data are included.
 
+
 ---
 
 **📸 Screenshots**
@@ -162,6 +163,7 @@ No real personal, payroll or confidential business data are included.
 
 ### 5️⃣ Compliance Training Assignment – First Day
 <img src="welcome_training_onboarding.JPG" width="600"/>
+
 
 **👩‍💼 Author** 
 
