@@ -67,20 +67,6 @@ Minimal required privileges (least-privilege principle)
 
 **👉 ## 📸 Screenshots**
 
-### 1️⃣ New Employee Onboarding – Initial Welcome
-<img src="screenshots/new_employee_onboarding.JPG" width="600"/>
-
-### 2️⃣ Pre-Start Form Request (HR & IT Preparation)
-<img src="screenshots/welcome_short_pre_start_form.JPG" width="600"/>
-
-### 3️⃣ Attendance Request – Rejected Example
-<img src="screenshots/attendent_rejected.JPG" width="600"/>
-
-### 4️⃣ Automated Reminder – 7 Days Before Start Date
-<img src="screenshots/reminder_new_employee_onboarding.JPG" width="600"/>
-
-### 5️⃣ Compliance Training Assignment – First Day
-<img src="screenshots/welcome_training_onboarding.JPG" width="600"/>
 
 **👩‍💼 Author** 
 
