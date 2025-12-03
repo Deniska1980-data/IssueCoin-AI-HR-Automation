@@ -1,4 +1,4 @@
-## 🚀 IssueCoin AI — HR Automation System
+## 🚀 IssueCoin AI — HR Automation System - business basic version
 
 AI-driven **HR & Payroll multi-agent automation** for **IssueCoin AI s.r.o.**, built on **Microsoft 365** and **Azure OpenAI**.
 System automates **onboarding, attendance approvals, mandatory training** and internal email communication using enterprise workflow automation.
