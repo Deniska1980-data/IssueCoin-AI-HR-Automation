@@ -136,11 +136,12 @@ SharePoint) SharePoint) Reminders) (Read-only)
 - Microsoft Teams approvals
 - Multi-language support (SK / CZ / EN)
 
-
 ## 🧩 System Architecture Diagram
 I am preparing and will publish soon.
 
+
 # 📸 Screenshots
+
 
 ### 1️⃣ New Employee Onboarding – Initial Welcome
 <img src="new_employee_onboarding.JPG" width="600"/>
@@ -317,24 +318,6 @@ Clear integration layer
 Role-based agents
 
 One orchestration brain at the top
-
-
-## 📸 Screenshots
-
-### 1️⃣ New Employee Onboarding – Initial Welcome
-<img src="new_employee_onboarding.JPG" width="600"/>
-
-### 2️⃣ Pre-Start Form Request (HR & IT Preparation)
-<img src="welcome_short_pre_start_form.JPG" width="600"/>
-
-### 3️⃣ Attendance Request – Rejected Example
-<img src="attendent_rejected.JPG" width="600"/>
-
-### 4️⃣ Automated Reminder – 7 Days Before Start Date
-<img src="reminder_new_employee_onboarding.JPG" width="600"/>
-
-### 5️⃣ Compliance Training Assignment – First Day
-<img src="welcome_training_onboarding.JPG" width="600"/>
 
 
 **👩‍💼 Author** 
