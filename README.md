@@ -5,6 +5,10 @@ System automates **onboarding, attendance approvals, mandatory training** and in
 
 ## 🤖 Multi-Agent Architecture
 
+🟦 Azure OpenAI • 🟩 Power Automate • 🟪 SharePoint • 🟨 Entra ID
+🤖 Multi-Agent AI • 🔐 DevSecOps • ☁ Cloud Automation
+
+
 | Agent                          | Responsibility                                          | Technology                    |
 | ------------------------------ | ------------------------------------------------------- | ----------------------------- |
 | **IssueCoin AI (Chief Agent)** | Controls all HR sub-agents, communication & decisions   | Azure OpenAI                  |
@@ -71,14 +75,14 @@ IssueCoin AI HR Automation uses a **secure multi-agent system** integrated withi
 All agents are coordinated by a single intelligence layer — **IssueCoin AI Boss Agent** running on **Azure OpenAI**.
 
                      ( Azure OpenAI )
-               ┌────────────────────────┐
-               │ IssueCoin AI Boss 🤖    │
-               │ Central Intelligence    │
-               │ Decision Logic + RAG    │
-               └───────────┬────────────┘
-                           │
+               ┌───────────────────────┐
+               │ IssueCoin AI Boss 🤖  |
+               │ Central Intelligence  │
+               │ Decision Logic + RAG  │
+               └──────────┬────────────┘
+                          │
                  Commands & Reporting
-                           │
+                          │
 ┌───────────────┬─────────┴──────────┬───────────────┐
 ▼               ▼                    ▼               ▼ (reports only up)
 
@@ -135,6 +139,167 @@ SharePoint) SharePoint) Reminders) (Read-only)
 
 ## 🧩 System Architecture Diagram
 I am preparing and will publish soon.
+
+## 🧠 AI Agent Pyramid Model (Pydantic Architecture)
+
+The IssueCoin AI HR system follows a **pyramid model** where everything starts from clean, typed data models and builds up towards autonomous AI agents and orchestration.
+
+At the bottom: **Pydantic-style data schemas** (clear structure, validation).  
+In the middle: **Tool and agent configs**.  
+At the top: **Multi-agent orchestration** driven by IssueCoin AI Boss.
+
+---
+### 🔹 Level 1 – Data Layer (Pydantic-style Schemas)
+
+This layer defines the core HR and automation objects as typed models.  
+Examples:
+
+- `Employee`
+- `LeaveRequest`
+- `TrainingRecord`
+- `OnboardingTask`
+- `LegislativeUpdate`
+
+Conceptually (Python / Pydantic style):
+
+```python
+from pydantic import BaseModel
+from datetime import date
+from typing import Literal, Optional
+
+class Employee(BaseModel):
+    id: str
+    name: str
+    email: str
+    department: str
+
+class LeaveRequest(BaseModel):
+    id: str
+    employee_id: str
+    start_date: date
+    end_date: date
+    reason: str
+    status: Literal["Pending", "Approved", "Rejected"]
+
+class TrainingRecord(BaseModel):
+    id: str
+    employee_id: str
+    course_code: str
+    status: Literal["Assigned", "Pending", "Completed"]
+    due_date: Optional[date] = None
+
+These models mirror what is stored in **SharePoint lists** and used in **Power Automate flows**.
+
+🔹 Level 2 – Tool & Integration Layer
+
+On top of the raw data, we define models that describe tools and integrations.
+Examples:
+
+SharePointListConfig (which list, which columns)
+
+FlowTriggerConfig (when to run which Power Automate flow)
+
+EmailTemplate (subject, body, placeholders)
+
+AgentToolConfig (which agent can call which tool)
+
+Conceptually:
+class EmailTemplate(BaseModel):
+    name: str
+    subject: str
+    body: str  # can include placeholders like {employee_name} or {leave_status}
+
+class SharePointListConfig(BaseModel):
+    site_url: str
+    list_name: str
+    key_column: str
+
+This layer describes how agents talk to Microsoft 365 + AWS tools without hard-coding everything.
+
+🔹 Level 3 – Agent Models (State & Behaviour)
+
+Each AI agent has its own configuration and state:
+
+AgentConfig – name, role, tools, permissions
+
+AgentState – memory, last actions, context
+
+AgentMessage – structured exchange between agents
+
+Examples:
+
+IC-HR Agent
+
+Attendance Agent
+
+Training Agent
+
+Legislative Agent (AWS Titan)
+
+Conceptually:
+class AgentConfig(BaseModel):
+    name: str
+    role: str
+    tools: list[str]
+    can_write_sharepoint: bool = False
+    can_send_email: bool = True
+
+class AgentState(BaseModel):
+    last_employee_id: str | None = None
+    last_action: str | None = None
+
+This layer describes what each agent is allowed to do and remember.
+
+🔹 Level 4 – Orchestration Layer (IssueCoin AI Boss)
+
+At the top of the pyramid is the IssueCoin AI Boss:
+
+Reads structured events from the lower layers
+
+Uses Azure OpenAI to reason over:
+
+HR data (leave requests, trainings, onboarding)
+
+Agent states (what was already done)
+
+Legislative hints (from AWS Titan)
+
+Decides which agent should act next and with what parameters
+
+Conceptually:
+class BossDecision(BaseModel):
+    target_agent: str
+    action: str
+    payload: dict
+    priority: int
+
+The Boss does not replace business rules – it coordinates them across multiple agents and tools.
+
+🔹 Why this Pyramid Model?
+
+✅ Pydantic-style models keep data clean, validated and explicit
+
+✅ Tools & flows are described, not hard-coded
+
+✅ AI agents operate on structured inputs, not on raw text only
+
+✅ The Boss Agent can reason safely because it knows:
+
+✅ Data types (Pydantic schemas)
+
+✅ Boundaries (which agent can do what)
+
+✅ Compliance constraints (via Legislative Agent)
+
+This matches modern agentic architecture patterns:
+
+Strong typed data core
+
+Clear integration layer
+
+Role-based agents
+
+One orchestration brain at the top
 
 
 ## 📸 Screenshots
