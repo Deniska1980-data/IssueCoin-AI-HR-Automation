@@ -3,7 +3,8 @@
 AI-driven **HR & Payroll multi-agent automation** for **IssueCoin AI s.r.o.**, built on **Microsoft 365** and **Azure OpenAI**.
 System automates **onboarding, attendance approvals, mandatory training** and internal email communication using enterprise workflow automation.
 
-🤖 Multi-Agent Architecture
+## 🤖 Multi-Agent Architecture
+
 | Agent                          | Responsibility                                          | Technology                    |
 | ------------------------------ | ------------------------------------------------------- | ----------------------------- |
 | **IssueCoin AI (Chief Agent)** | Controls all HR sub-agents, communication & decisions   | Azure OpenAI                  |
