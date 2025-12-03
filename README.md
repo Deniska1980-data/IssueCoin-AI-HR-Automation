@@ -39,7 +39,7 @@ GDPR
 **Tracking completion status in SharePoint**
 **Auto-reminder after 7 days**
 
-**🛠️ Tech Stack** 
+## 🛠️ Tech Stack
 
 | Layer                | Service                                    |
 | -------------------- | ------------------------------------------ |
