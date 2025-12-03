@@ -65,6 +65,87 @@ Minimal required privileges (least-privilege principle)
 | Phase 3 | Integration with n8n + RAG knowledge of labor law |
 | Phase 4 | Self-service HR assistant chat for employees      |
 
+---
+
+## 🧠 Multi-Agent Governance Architecture
+
+IssueCoin AI HR Automation uses a **secure multi-agent system** integrated within Microsoft Cloud.
+
+All agents are coordinated by a single intelligence layer — **IssueCoin AI Boss Agent** running on **Azure OpenAI**.
+
+                     ( Azure OpenAI )
+               ┌────────────────────────┐
+               │ IssueCoin AI Boss 🤖    │
+               │ Central Intelligence    │
+               │ Decision Logic + RAG    │
+               └───────────┬────────────┘
+                           │
+                 Commands & Reporting
+                           │
+┌───────────────┬─────────┴──────────┬───────────────┐
+▼               ▼                    ▼               ▼ (reports only up)
+
+IC-HR Agent Attendance Agent Training Agent Legislative Agent
+Onboarding Leave Workflow BOZP/GDPR AWS Lambda + Titan
+(Forms + (Approvals + (Automation & Compliance Monitor
+SharePoint) SharePoint) Reminders) (Read-only)                   
+
+---
+
+## 🔐 Security & Compliance Principles
+
+| Area | Implementation |
+|------|----------------|
+| Identity | Azure AD (MFA, SSO, OAuth2) |
+| Access Control | Role-based — **least privilege** |
+| Data Source | Encrypted at rest in SharePoint (no real personal data) |
+| Workflow Governance | Logs & Audit trails via Power Automate |
+| Legislative Data | **Read-only** access via AWS Titan |
+| Email Security | Outlook + Microsoft 365 ATP |
+| Separation of Duties | HR approval ≠ IT access |
+
+> 📌 No personal identifiers (PII) or sensitive personal data are stored in this demo environment.
+
+---
+
+## 🤖 AI Agents Overview
+
+| Agent | Platform | Status | Responsibility |
+|-------|----------|--------|----------------|
+| IssueCoin AI Boss | Azure OpenAI | Active | Coordinates agents, business decision logic |
+| IC-HR Agent | Azure OpenAI | Active | Pre-start checklist, onboarding forms |
+| Attendance Agent | Azure OpenAI | Active | Leave approvals & reminders |
+| Training Agent | Azure OpenAI | Coming Soon | Mandatory training automation |
+| Legislative Agent | AWS Lambda + Titan | Coming Soon | EU law monitoring (GDPR/BOZP) |
+
+---
+
+## 🚀 DevOps & Operations Model
+
+| Layer | Technology |
+|------|------------|
+| Version Control | GitHub |
+| Documentation | README + SharePoint HR Library |
+| Automation Runtime | Microsoft Power Automate |
+| Communication | Outlook, SharePoint REST API |
+| Monitoring | M365 Cloud Logs + Flow Runs |
+| Future CI/CD | GitHub Actions for automation export |
+
+---
+
+### 🔜 Roadmap (next releases)
+
+- Mandatory training workflows (BOZP/PO/GDPR)
+- Titan-powered legislative alerts
+- Microsoft Teams approvals
+- Multi-language support (SK / CZ / EN)
+
+⚠️ Disclaimer:
+This automation system is built using demo test data only. 
+No real personal, payroll or confidential business data are included.
+
+---
+
 **📸 Screenshots**
 
 ### 1️⃣ New Employee Onboarding – Initial Welcome
