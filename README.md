@@ -8,7 +8,6 @@ System automates **onboarding, attendance approvals, mandatory training** and in
 🟦 Azure OpenAI • 🟩 Power Automate • 🟪 SharePoint • 🟨 Entra ID
 🤖 Multi-Agent AI • 🔐 DevSecOps • ☁ Cloud Automation
 
-
 | Agent                          | Responsibility                                          | Technology                    |
 | ------------------------------ | ------------------------------------------------------- | ----------------------------- |
 | **IssueCoin AI (Chief Agent)** | Controls all HR sub-agents, communication & decisions   | Azure OpenAI                  |
