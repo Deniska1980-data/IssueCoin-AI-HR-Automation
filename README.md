@@ -133,6 +133,10 @@ SharePoint) SharePoint) Reminders) (Read-only)
 - Multi-language support (SK / CZ / EN)
 
 
+## 🧩 System Architecture Diagram
+
+<img src="architecture.svg" width="900"/>
+
 
 ## 📸 Screenshots
 
