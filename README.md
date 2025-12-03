@@ -107,7 +107,6 @@ SharePoint) SharePoint) Reminders) (Read-only)
 > 📌 No personal identifiers (PII) or sensitive personal data are stored in this demo environment.
 
 ---
-
 ## 🤖 AI Agents Overview
 
 | Agent | Platform | Status | Responsibility |
@@ -119,7 +118,6 @@ SharePoint) SharePoint) Reminders) (Read-only)
 | Legislative Agent | AWS Lambda + Titan | Coming Soon | EU law monitoring (GDPR/BOZP) |
 
 ---
-
 ## 🚀 DevOps & Operations Model
 
 | Layer | Technology |
@@ -132,7 +130,6 @@ SharePoint) SharePoint) Reminders) (Read-only)
 | Future CI/CD | GitHub Actions for automation export |
 
 ---
-
 ### 🔜 Roadmap (next releases)
 
 - Mandatory training workflows (BOZP/PO/GDPR)
@@ -141,7 +138,8 @@ SharePoint) SharePoint) Reminders) (Read-only)
 - Multi-language support (SK / CZ / EN)
 
 
-**📸 Screenshots**
+
+## 📸 Screenshots
 
 ### 1️⃣ New Employee Onboarding – Initial Welcome
 <img src="new_employee_onboarding.JPG" width="600"/>
