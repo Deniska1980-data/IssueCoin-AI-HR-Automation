@@ -140,6 +140,23 @@ SharePoint) SharePoint) Reminders) (Read-only)
 ## 🧩 System Architecture Diagram
 I am preparing and will publish soon.
 
+# 📸 Screenshots
+
+### 1️⃣ New Employee Onboarding – Initial Welcome
+<img src="new_employee_onboarding.JPG" width="600"/>
+
+### 2️⃣ Pre-Start Form Request (HR & IT Preparation)
+<img src="welcome_short_pre_start_form.JPG" width="600"/>
+
+### 3️⃣ Attendance Request – Rejected Example
+<img src="attendent_rejected.JPG" width="600"/>
+
+### 4️⃣ Automated Reminder – 7 Days Before Start Date
+<img src="reminder_new_employee_onboarding.JPG" width="600"/>
+
+### 5️⃣ Compliance Training Assignment – First Day
+<img src="welcome_training_onboarding.JPG" width="600"/>
+
 ## 🧠 AI Agent Pyramid Model (Pydantic Architecture)
 
 The IssueCoin AI HR system follows a **pyramid model** where everything starts from clean, typed data models and builds up towards autonomous AI agents and orchestration.
@@ -190,7 +207,7 @@ class TrainingRecord(BaseModel):
 
 These models mirror what is stored in **SharePoint lists** and used in **Power Automate flows**.
 
-🔹 Level 2 – Tool & Integration Layer
+### 🔹 Level 2 – Tool & Integration Layer
 
 On top of the raw data, we define models that describe tools and integrations.
 Examples:
@@ -216,7 +233,7 @@ class SharePointListConfig(BaseModel):
 
 This layer describes how agents talk to Microsoft 365 + AWS tools without hard-coding everything.
 
-🔹 Level 3 – Agent Models (State & Behaviour)
+### 🔹 Level 3 – Agent Models (State & Behaviour)
 
 Each AI agent has its own configuration and state:
 
@@ -250,7 +267,7 @@ class AgentState(BaseModel):
 
 This layer describes what each agent is allowed to do and remember.
 
-🔹 Level 4 – Orchestration Layer (IssueCoin AI Boss)
+### 🔹 Level 4 – Orchestration Layer (IssueCoin AI Boss)
 
 At the top of the pyramid is the IssueCoin AI Boss:
 
@@ -275,7 +292,7 @@ class BossDecision(BaseModel):
 
 The Boss does not replace business rules – it coordinates them across multiple agents and tools.
 
-🔹 Why this Pyramid Model?
+### 🔹 Why this Pyramid Model?
 
 ✅ Pydantic-style models keep data clean, validated and explicit
 
