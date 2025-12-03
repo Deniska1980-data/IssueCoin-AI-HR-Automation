@@ -134,7 +134,7 @@ SharePoint) SharePoint) Reminders) (Read-only)
 
 
 ## 🧩 System Architecture Diagram
-<img src="https://raw.githubusercontent.com/Deniska1980-data/IssueCoin-AI-HR-Automation/main/architecture.svg" width="900"/>
+I am preparing and will publish soon.
 
 
 ## 📸 Screenshots
